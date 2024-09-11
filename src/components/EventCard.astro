@@ -1,5 +1,5 @@
 ---
-const { title, text, url, date, place, img, alt } = Astro.props;
+const { title, text, url, date1, date2, place, img, alt } = Astro.props;
 
 import Button from './Button.astro';
 import ButtonLink from './ButtonLink.astro';
@@ -13,7 +13,8 @@ import FeaturedBulletPoints from './FeaturedBulletPoints.astro';
         <h3>{title}</h3>
         <p>{text}</p>
         <BulletPoint icon="fa-solid fa-location-dot" text={place} />
-        <BulletPoint icon="fa-solid fa-clock" text={date} />
+        <BulletPoint icon="fa-solid fa-clock" text={date1} />
+        <BulletPoint icon="fa-solid fa-clock" text={date2} />
         <Button text="Scopri di più" />
     </TextImage>
 </div>
@@ -25,10 +26,11 @@ import FeaturedBulletPoints from './FeaturedBulletPoints.astro';
             <p>{text}</p>
             <FeaturedBulletPoints>
                 <BulletPoint icon="fa-solid fa-location-dot" text={place} />
-                <BulletPoint icon="fa-solid fa-clock" text={date} />
+                <BulletPoint icon="fa-solid fa-clock" text={date1} />
+                <BulletPoint icon="fa-solid fa-clock" text={date2} />
                 <BulletPoint icon="fa-solid fa-euro-sign" text="Ingresso con offerta" />
             </FeaturedBulletPoints>
-            <ButtonLink url={url} text="Prenota i biglietti" icon="fa-brands fa-whatsapp" />
+            <ButtonLink url={url} text="Prenota i biglietti" />
         </TextImage>
         <span id="modal-close"><i class="fa-solid fa-xmark"></i></span>
     </div>
