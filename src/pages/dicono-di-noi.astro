@@ -7,6 +7,8 @@ import Grid from "../components/Grid.astro";
 import miLorenteggioImage from "../assets/testimonials/mi-lorenteggio.jpg";
 import dmdImage from "../assets/testimonials/dmd.png";
 import sempioneNewsImage from "../assets/testimonials/sempione-news.png";
+import ilRhodenseImage from "../assets/testimonials/il-rhodense.png";
+import studioMuliariImage from "../assets/testimonials/studio-muliari.png";
 ---
 
 <Layout title="Dicono di noi - AFK Progetto Giovani">
@@ -18,6 +20,20 @@ import sempioneNewsImage from "../assets/testimonials/sempione-news.png";
         <section>
             <h2>COSA NE PENSANO DEL NOSTRO PROGETTO?</h2>
             <Grid>
+                <TestimonialsCard
+                    img={ilRhodenseImage}
+                    alt="Il Rhodense"
+                    url="https://ilrhodense.it/rho-afk-con-i-suoi-tre-spettacoli-dona-speranza/"
+                    title="Rho. AFK con i suoi tre spettacoli dona speranza "
+                    text="Una bellissima serata che ha visto la partecipazione di oltre 280 persone molto attente al musical, una storia creata dalla fantasia e dalla professionalità..."
+                />
+                <TestimonialsCard
+                    img={studioMuliariImage}
+                    alt="Studio Muliari"
+                    url="https://muliari.com/la-festa-di-afk-progetto-giovani-per-i-sostenitori/"
+                    title="La festa di AFK Progetto Giovani per i sostenitori"
+                    text="Nel fine settimana abbiamo partecipato alla festa di AFK-Progetto Giovani riservata ai sostenitori. È stato bello ascoltare le esperienze dei ragazzi..."
+                />
                 <TestimonialsCard
                     img={miLorenteggioImage}
                     alt="MI Lorenteggio"
