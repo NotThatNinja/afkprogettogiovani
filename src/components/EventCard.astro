@@ -14,7 +14,7 @@ import FeaturedBulletPoints from './FeaturedBulletPoints.astro';
         <p>{text}</p>
         <BulletPoint icon="fa-solid fa-location-dot" text={place} />
         <BulletPoint icon="fa-solid fa-clock" text={date1} />
-        <BulletPoint icon="fa-solid fa-clock" text={date2} />
+        {date2 !== undefined && <BulletPoint icon="fa-solid fa-clock" text={date2} />}
         <Button text="Scopri di più" />
     </TextImage>
 </div>
@@ -27,7 +27,7 @@ import FeaturedBulletPoints from './FeaturedBulletPoints.astro';
             <FeaturedBulletPoints>
                 <BulletPoint icon="fa-solid fa-location-dot" text={place} />
                 <BulletPoint icon="fa-solid fa-clock" text={date1} />
-                <BulletPoint icon="fa-solid fa-clock" text={date2} />
+                {date2 !== undefined && <BulletPoint icon="fa-solid fa-clock" text={date2} />}
                 <BulletPoint icon="fa-solid fa-euro-sign" text="Ingresso con offerta" />
             </FeaturedBulletPoints>
             <ButtonLink url={url} text="Prenota i biglietti" />
