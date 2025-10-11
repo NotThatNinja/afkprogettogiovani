@@ -1,0 +1,6 @@
+option batch abort
+option confirm off
+open afkprogettogiovani.it
+lcd "C:/Users/samue/Documents/Coding/Web/afkprogettogiovani/"
+synchronize remote -delete -criteria=date ./dist /httpdocs
+exit
